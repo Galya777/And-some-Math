@@ -1,4 +1,4 @@
-function [x, n] = Homework2_Part4_45616(x, n)
+function [S] = Homework2_Part4_45616(x, n)
 k=0; S=1;
 while k<n
     k=k+1;
