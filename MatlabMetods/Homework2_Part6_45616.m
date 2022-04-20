@@ -2,9 +2,9 @@
 %. Въвеждане на a, b, c в диалогов режим. Ако има комплексни корени ,
 %то нека се печати съобщение.
 f=msgbox('Enter quefients: ');
-a= inputdigit();
-b= inputdigit();
-c= inputdigit();
+a= input('First queficient is: ');
+b= input('Second queficient is:');
+c= input('Third queficient is:');
 if imag(a) ~= 0 || imag(b) ~= 0||imag(c) ~= 0
     f=msgbox('Only real numbers required!');
 end
