@@ -11,4 +11,5 @@ end
 end
 A=[a1 a2; a3 a4];
 %%find m
-m=max(sum(power(A(i:6,j:6),2)))
+m=max(sum(power(A(6,:),2)))
+%right answear is 39

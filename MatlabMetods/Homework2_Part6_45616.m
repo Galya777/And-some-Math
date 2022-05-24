@@ -11,12 +11,12 @@ end
 D=b*b-4*a*c;
 
 if D>0
-    x1=(-b+sqrt(D))/2*a;
-    x2=(-b-sqrt(D))/2*a;
+    x1=(-b+sqrt(D))/2*a
+    x2=(-b-sqrt(D))/2*a
 elseif D==0
-    x=-b/2*a;
+    x=-b/2*a
 else 
-    f=msgbox('No real solution!');
+    f=msgbox('No real solution!')
 end  
     
 

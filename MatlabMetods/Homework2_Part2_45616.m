@@ -4,4 +4,6 @@ while b>0.01
 n=n+1; 
 b=pi/power(2, n);
 end
+n=n-1;
+b=b*2;
 disp(b)
