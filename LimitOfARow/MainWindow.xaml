@@ -1,0 +1,88 @@
+﻿<Window x:Class="LimitOfARow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LimitOfARow"
+        mc:Ignorable="d"
+        Title="Calculate a limit of a row" Height="450" Width="500" x:Name="frmCalc" BorderBrush="Tomato" Background="LightPink">
+   <StackPanel Orientation="Vertical">
+        <Grid Height="100" Width="470" x:Name="grd" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Height="200" VerticalAlignment="Top" FlowDirection="LeftToRight" TextWrapping="NoWrap" FontSize="20" HorizontalAlignment="Left" Grid.Column="0"><Run Text="Number row:"/></TextBlock>
+            <Image Source="D:\limit.bmp"  Grid.Column="1" Visibility="Visible"/>
+        </Grid><!--C:\Users\hp\Desktop\26.07.2021\D\Информатика\2 курс\зима\Допълнение към курса по ДИС\LimitOfARow\l-->
+        <Grid Height="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0"> Enter the value of the first member of the row: </TextBlock>
+            <TextBox x:Name="givenFirst" Text=""  Grid.Column="1" Height="40" Width="110" HorizontalAlignment="Center" FontSize="35"> </TextBox>
+            <Button x:Name="Calc" Click="Calc_Click" Grid.Column="2" Height="40" Width="70" HorizontalAlignment="Left">Find Limit</Button>
+        </Grid>
+        <Grid Height="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" FontSize="40"  HorizontalAlignment="Right">Limit:</TextBlock>
+            <TextBlock x:Name="limit" FontSize="40" FontWeight="DemiBold" Background="Azure" Height="50" Width="160" Grid.Column="1" HorizontalAlignment="Left"></TextBlock>
+            <Button x:Name="members" Click="members_Click" Grid.Column="2" Height="40" Width="90" HorizontalAlignment="Center">Find members</Button>
+        </Grid>
+        <Grid Height="50">
+            <TextBlock VerticalAlignment="Bottom" FontSize="20">Enter five indexes to find members of the row: </TextBlock>
+        </Grid>
+        <Grid Height="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Name="i1" Grid.Column="0" HorizontalAlignment="Center" Height="40" Width="60" FontSize="35"></TextBox>
+            <TextBox Name="i2" Grid.Column="1" HorizontalAlignment="Center" Height="40" Width="60" FontSize="35"></TextBox>
+            <TextBox Name="i3" Grid.Column="2" HorizontalAlignment="Center" Height="40" Width="60" FontSize="35"></TextBox>
+            <TextBox Name="i4" Grid.Column="3" HorizontalAlignment="Center" Height="40" Width="60" FontSize="35"></TextBox>
+            <TextBox Name="i5" Grid.Column="4" HorizontalAlignment="Center" Height="40" Width="60" FontSize="35"></TextBox>
+        </Grid>
+        <Grid Height="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" HorizontalAlignment="Center"  FontSize="40">ai1</TextBlock>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Center"  FontSize="40">ai2</TextBlock>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Center"  FontSize="40">ai3</TextBlock>
+            <TextBlock Grid.Column="3" HorizontalAlignment="Center"  FontSize="40">ai4</TextBlock>
+            <TextBlock Grid.Column="4" HorizontalAlignment="Center"  FontSize="40">ai5</TextBlock>
+        </Grid>
+
+        <Grid Height="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="a1" Text="" FontWeight="DemiBold"  FontSize="15"  Background="Azure" Height="40" Width="60" Grid.Column="0" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="a2" Text="" FontWeight="DemiBold"  FontSize="15"  Background="Azure" Height="40" Width="60" Grid.Column="1" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="a3" Text="" FontWeight="DemiBold"  FontSize="15"  Background="Azure" Height="40" Width="60" Grid.Column="2" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="a4" Text="" FontWeight="DemiBold"  FontSize="15"  Background="Azure" Height="40" Width="60" Grid.Column="3" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="a5" Text="" FontWeight="DemiBold"  FontSize="15"  Background="Azure" Height="40" Width="60" Grid.Column="4" HorizontalAlignment="Center"></TextBlock>
+        </Grid>
+        
+    </StackPanel>
+       
+    
+</Window>
