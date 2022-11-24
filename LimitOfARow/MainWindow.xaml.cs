@@ -23,8 +23,8 @@ namespace LimitOfARow
     {
         #region Fields
         //equation f(x)=(2*x*x+x+6)/ (x+6)
-        double firstMember;
-        int i01, i02, i03, i04, i05;
+        private double firstMember;
+        private int i01, i02, i03, i04, i05;
 
         #endregion
         public MainWindow()
@@ -39,16 +39,16 @@ namespace LimitOfARow
             int points = 0;
             for (int i = 0; i < s.Length; i++)
             {
-                if (!Char.IsNumber(s.ElementAt(i)) && s.ElementAt(i) != '-' && s.ElementAt(i) != '.') return false;
+                if (!Char.IsNumber(s.ElementAt(i)) && s.ElementAt(i) != '-' && s.ElementAt(i) != ',') return false;
                 else if (s.ElementAt(i) == '-' && i != 0) return false;
-                else if (s.ElementAt(i) == '.') points++;
+                else if (s.ElementAt(i) == ',') points++;
             }
             return points <= 1;
         }
         string findLimit(string member)
         {
             string l = "";
-            firstMember = Int32.Parse(member);
+            firstMember = Double.Parse(member);
             if (firstMember < -6) l = "-Infinity";
             else if ((firstMember > -6 && firstMember < -2) || (firstMember > 3)) l = "+Infinity";
             else if (firstMember >= -1.5 && firstMember <= 2) l = "2";
